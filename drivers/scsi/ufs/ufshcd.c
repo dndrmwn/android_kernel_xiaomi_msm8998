@@ -9754,7 +9754,7 @@ static int ufshcd_devfreq_target(struct device *dev,
 out:
 	if (sched_clk_scaling_suspend_work)
 		queue_work(hba->clk_scaling.workq,
-			   &hba->clk_scaling.suspend_work);
+			   	   &hba->clk_scaling.suspend_work);
 
 	return ret;
 }
