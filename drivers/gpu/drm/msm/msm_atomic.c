@@ -387,7 +387,7 @@ static void msm_atomic_helper_commit_modeset_enables(struct drm_device *dev,
 		encoder = connector->state->best_encoder;
 
 		DRM_DEBUG_ATOMIC("bridge enable enabling [ENCODER:%d:%s]\n",
-				 encoder->base.id, encoder->name);
+				 		 encoder->base.id, encoder->name);
 
 		drm_bridge_enable(encoder->bridge);
 	}
